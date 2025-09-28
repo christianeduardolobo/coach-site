@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="/styles/eventos.css">
+</head>
+<body>
+    <main>
+        <aside>
+            <a href="https://api.whatsapp.com/send/?phone=5577988155410&text=Quero+reservar+minha+vaga+e+saber+mais+detalhes.&type=phone_number&app_absent=0" target="_blank"> <img src="event/ep5-whitoutback.png" alt=""> </a>
+        </aside>
+        <article>
+            <h1>Aula para governar por dentro e avançar por fora</h1>
+            <h2><a href="https://api.whatsapp.com/send/?phone=5577988155410&text=Quero+reservar+minha+vaga+e+saber+mais+detalhes.&type=phone_number&app_absent=0" target="_blank">Quero Participar!</a></h2>
+            <h2><a href="#" id="mostrarBtn">Informações</a></h2>
+            <div id="conteudo" style="display: none;">
+                <h3>1. Como funciona a série presencial?</h3>
+                <p>A cada semana, um episódio presencial (tema exclusivo e independente de cada) com conteúdo novo e transformação real. Você escolhe participar de um episódio ou garantir acesso à temporada inteira.</p>
+                <h3>2. Qual a diferença entre acesso por episódio e acesso total à temporada?</h3>
+                <p> <strong>- Episódio avulso (R$ 47,90):</strong> Você participa apenas do encontro daquele dia, recebe o material do episódio e pronto.</p>
+                <p><strong>- Temporada completa:</strong> Você garante presença em todos os 12 episódios, recebe todos os materiais, prioridade em perguntas, bônus exclusivos e economiza no pacote.</p>
+                <h3>Posso começar pela Temporada mesmo se nunca participei?</h3>
+                <p>Sim! O acesso à Temporada garante todos os episódios, bônus e participação prioritária, independente do seu histórico.</p>
+                <h3>E se eu quiser só um episódio?</h3>
+                <p>Você pode garantir seu ingresso para o episódio avulso e, se gostar, migrar para a Temporada depois.</p>
+                <h3>O que é o Grupo Exclusivo?</h3>
+                <p>É um espaço VIP para dúvidas, bastidores e networking com outros participantes e com José Eduardo.</p>
+                <h3>3. Preciso começar pelo episódio 1?</h3>
+                <p><strong>Não.</strong> Cada episódio é uma virada diferente. Mas quem faz a temporada inteira vive uma transformação mais profunda.</p>
+                <h3>4. Posso decidir no dia?</h3>
+                <p>Sim! Quando disponível os outros. Se ainda houver vaga, você pode garantir seu acesso no dia do episódio. Mas atenção: as vagas acabam rápido!</p>
+                <h3>5. Onde será e qual a duração?</h3>
+                <p>Temporada 1 em Vitória da Conquista, local divulgado após inscrição. Cada episódio dura aproximadamente 2h, podendo se estender.</p>
+                <h3>6. Se eu perder um episódio, posso repor?</h3>
+                <p>Quem garante a temporada completa terá acesso ao conteúdo quando for disponibilizado novamente no presencial.</p>
+                <h3>7. O que eu ganho de bônus ao fazer a temporada inteira?</h3>
+                <p>Prioridade nas perguntas, acesso a materiais extras, grupo VIP e condições exclusivas para mentorias futuras.</p>
+                <h3>8. Quem pode participar?</h3>
+                <p>Maiores de 18 anos e qualquer pessoa que quer destravar de verdade — líderes, empreendedores, profissionais e quem cansou de travar por dentro. </p>
+            </div>
+        </article>
+        <div id="rodape">
+            <div id="title">
+                <h1>Referências:</h1>
+            </div>
+            <div id="info">
+                <div id="local">
+                    <h1>Local:</h1>
+                    <p>Centro Comercial Lobo - Rua Zeferino</p>
+                    <p>Correia, 77, Centro, Vitória da Conquista-BA.</p>
+                    <p>Auditório Neuza Lobo</p>
+                </div>
+                <div id="contato">
+                    <h1>Contatos:</h1>
+                    <p>E-mail: <a href="mailto:contato@joseeduardo.com.br">contato@joseeduardo.com.br</a></p>
+                    <p>WhatsApp: <a href="https://api.whatsapp.com/send/?phone=557798611522&text&app_absent=0" target="_blank">77 99861-1522</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        const botao = document.getElementById("mostrarBtn");
+        const artigo = document.getElementById("conteudo");
+
+        botao.addEventListener("click", function(e){
+            e.preventDefault();
+            if (conteudo.style.display === "none") {
+                conteudo.style.display = "block";
+                botao.textContent = "Informações";
+            } else {
+                conteudo.style.display = "none"
+                botao.texto.content = "Informações";
+            }
+        })
+    </script>
+</body>
+</html>
