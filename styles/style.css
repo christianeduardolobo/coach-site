@@ -69,7 +69,7 @@ nav{
     margin: 10px;
 }
 .darkmode #logo{
-    content: url(./images/Logo.png);
+    content: url(../images/logo-black.png);
 }
 
 li > a{
