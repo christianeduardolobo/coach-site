@@ -5,10 +5,10 @@ const logo = document.getElementById('logo');
 function applyTheme(theme){
   if(theme === 'dark') {
     document.body.classList.add('dark-mode');
-    logo.src = "/images/logo-black.png";
+    logo.src = "./images/logo-black.png";
   } else {
     document.body.classList.remove('dark-mode');
-    logo.src = "/images/logo-white.png";
+    logo.src = "./images/logo-white.png";
   }
 }
 

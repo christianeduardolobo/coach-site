@@ -42,7 +42,7 @@
   }
   header{
     color: white;
-    background-image: url(/images/bannerjs.png);
+    background-image: url(../images/bannerjs.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top center;
@@ -158,7 +158,7 @@ main > article > a{
   /* HEADER */
   header{
     color: #fff;
-    background-image: url(/images/bannerjs.png);
+    background-image: url(../images/bannerjs.png);
     background-repeat: no-repeat;
     background-attachment: scroll;   /* melhor no mobile */
     background-position: center top;
@@ -285,7 +285,7 @@ main > article > a{
   /* HEADER */
   header{
     color: #fff;
-    background-image: url(/images/bannerjs.png);
+    background-image: url(../images/bannerjs.png);
     background-repeat: no-repeat;
     background-attachment: scroll;     /* corrige no mobile */
     background-position: center top;

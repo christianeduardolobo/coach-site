@@ -69,7 +69,7 @@ nav{
     margin: 10px;
 }
 .darkmode #logo{
-    content: url(/images/Logo.png);
+    content: url(./images/Logo.png);
 }
 
 li > a{
@@ -108,7 +108,7 @@ footer > nav > ul > li{
 header{
     color: white;
     height: 730px;
-    background-image: url(/images/bannerjs.png);
+    background-image: url(../images/bannerjs.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right center;
@@ -117,7 +117,7 @@ header{
     height: 100vh;
 }
 .darkmode #bannerjs{
-    content: url(/images/logo-black.png);
+    content: url(./images/logo-black.png);
 }
 header > section > h1{
     color: white;
