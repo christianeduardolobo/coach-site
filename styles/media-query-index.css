@@ -193,7 +193,7 @@ main > article > a{
     font-size: 15px;
     line-height: 1.4;
     max-width: 92vw; 
-    margin-bottom: 420px;        /* evita overflow */
+    margin-bottom: 250px;        /* evita overflow */
   }
 
   /* MAIN */
@@ -324,7 +324,7 @@ main > article > a{
     line-height: 1.4;
     max-width: 92vw;                    /* nada de width fixa (500px) */
     margin: 6px auto 0;
-    margin-bottom: 400px;
+    margin-bottom: 200px;
   }
 
   /* MAIN */
@@ -374,3 +374,4 @@ main > article > a{
   /* Garantia contra scroll horizontal */
   body{ overflow-x: hidden; }
 }
+
