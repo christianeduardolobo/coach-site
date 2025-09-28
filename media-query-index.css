@@ -1,0 +1,376 @@
+@charset "UTF-8";
+
+
+
+
+
+@media (max-width: 1100px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+    nav {
+    flex-direction: column;       
+    height: auto;                 
+    align-items: center;          
+    }
+
+    nav ul {
+    flex-direction: column;       
+    align-items: center;
+    padding: 0;
+    }
+
+  nav ul li {
+    padding: 5px 0;               
+  }
+
+  #logo {
+    width: 250px;                 
+    margin: 15px auto;
+  }
+
+  #socialMedia {
+    flex-direction: row;          
+    justify-content: center;
+  }
+
+  #socialMedia > li > a > ion-icon {
+    margin: 0 15px;               
+  }
+  header{
+    color: white;
+    background-image: url(../images/bannerjs.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    display: flex;
+    justify-content: center;
+    height: 75vh;
+}
+  header > section > h1{
+    color: white;
+    text-align: center;
+    font-family: "Libertinus Serif Display";
+    font-size: 20px;
+}
+    header > section > h2{
+    font-family: "Montserrat";
+    margin: 10px;
+    text-align: center;
+    font-size: 15px;
+    width: 500px;
+}
+
+main{
+    flex-wrap: wrap-reverse;
+    height: 100vh;
+}
+aside #bannerjs{
+    height: 50vh;
+}
+article > h1{
+    font-size: 20px;
+}
+main > article > p{
+    font-size: 13.9px;
+    font-weight: 700;
+}
+main > article > a{
+    font-size: 20px;
+}
+@keyframes autoRun{
+    from{
+        transform: perspective(2000px) rotateX(-7deg) rotateY(0deg)
+    } to{
+        transform: perspective(2000px) rotateX(-7deg) rotateY(360deg);
+    }
+}
+#rodape .menu li a{
+    text-align: center;
+}
+#clientes h1{
+    font-size: 30px;
+}
+}
+
+@media (min-width: 370px) and (max-width: 600px){
+
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+  /* NAV (no footer) */
+  nav{
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3px 11px;
+    gap: 3px;
+    
+  }
+
+  nav ul{
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: -5px;
+    gap: 6px;
+  }
+
+  nav ul li{
+    padding: 3px 0;
+  }
+
+  /* Evita “salto” de layout no hover em telas pequenas */
+  li > a{
+    font-size: 16px;
+  }
+  li > a:hover{
+    font-size: 16px; /* mantém tamanho, só muda cor */
+    color: chocolate;
+  }
+
+  #logo{
+    width: 250px;
+    height: auto;
+    margin: 10px auto;
+  }
+
+  #socialMedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    margin-top: -20px;
+  }
+  #socialMedia > li > a > ion-icon{
+    margin: 0;              /* zera margens negativas do desktop */
+    transform: scale(1.3);
+  }
+
+  /* HEADER */
+  header{
+    color: #fff;
+    background-image: url(../images/bannerjs.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;   /* melhor no mobile */
+    background-position: center top;
+    background-size: cover;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 24px 12px;
+  }
+
+  header > section{ width: 100%; }
+
+  header > section > h1{
+    color: #fff;
+    text-align: center;
+    font-family: "Libertinus Serif Display", serif;
+    font-size: 20px;
+    line-height: 1.25;
+    margin: 0 auto 8px;
+    white-space: normal;   /* permite quebra */
+    width: auto;
+    border-right: 0;       /* desliga cursor do typewriter aqui */
+    animation: none;       /* sem animação neste range */
+  }
+
+  header > section > h2{
+    font-family: "Montserrat", sans-serif;
+    margin: 0px auto 0;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.4;
+    max-width: 92vw; 
+    margin-bottom: 250px;        /* evita overflow */
+  }
+
+  /* MAIN */
+  main{
+    display: flex;         /* garante flex se não estiver setado */
+    flex-wrap: wrap-reverse;
+    height: auto;
+    gap: 12px;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+
+  aside #bannerjs{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 40vh;
+    object-fit: contain;
+  }
+
+  article > h1{
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 8px 0;
+    text-align: center;
+  }
+
+  main > article > p{
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  main > article > a{
+    font-size: 25px;
+  }
+
+  #rodape .menu li a{
+    text-align: center;
+  }
+}
+
+
+
+@media (max-width: 370px){
+
+  /* NAV (no footer) */
+  nav{
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 6px 10px;
+    gap: 4px;
+  }
+
+  nav ul{
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 6px;
+  }
+
+  nav ul li{ padding: 3px 0; }
+
+  /* Evita salto no hover */
+  li > a{ font-size: 15px; }
+  li > a:hover{ font-size: 15px; color: chocolate; }
+
+  #logo{
+    width: 200px;
+    height: auto;
+    margin: 8px auto;
+  }
+
+  #socialMedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    margin-top: -5px;
+  }
+  #socialMedia > li > a > ion-icon{
+    margin: -5px;
+    transform: scale(1.7);
+  }
+
+  /* HEADER */
+  header{
+    color: #fff;
+    background-image: url(../images/bannerjs.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;     /* corrige no mobile */
+    background-position: center top;
+    background-size: cover;
+    width: 100%;                        /* evita 100vw + scrollbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 64vh;
+    padding: 16px 10px 22px;
+    box-sizing: border-box;
+    width: 110vw;
+  }
+
+  header > section{ width: 100%; }
+
+  header > section > h1{
+    color: #fff;
+    text-align: center;
+    font-family: "Libertinus Serif Display", serif;
+    font-size: 17px;
+    line-height: 1.25;
+    margin: 0 auto 6px;
+    white-space: normal;                /* deixa quebrar */
+    width: auto;
+    border-right: 0;                    /* sem cursor do typewriter */
+    animation: none;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  header > section > h2{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 13.5px;
+    line-height: 1.4;
+    max-width: 92vw;                    /* nada de width fixa (500px) */
+    margin: 6px auto 0;
+    margin-bottom: 250px;
+  }
+
+  /* MAIN */
+  main{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    height: auto;
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 110vw;
+  }
+
+  aside #bannerjs{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 36vh;
+    object-fit: contain;
+  }
+
+  article > h1{
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 6px 0;
+    text-align: center;
+  }
+
+  main > article > p{
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  main > article > a{
+    font-size: 17px;                   /* CTA proporcional à tela */
+  }
+  #clientes{
+    width: 110vw;
+  }
+  #rodape{
+    width: 110vw;
+  }
+  #rodape .menu li a{ text-align: center; }
+  #clientes h1{ font-size: 22px; }
+
+  /* Garantia contra scroll horizontal */
+  body{ overflow-x: hidden; }
+}
